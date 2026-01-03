@@ -14,5 +14,7 @@ bool is_sorted(const vector<int>& arr, int i) {
 int main(){
     vector<int> arr = {1, 3, 4, 5 ,7};
     cout << is_sorted(arr, 0) << endl;
+    cout << "bye" << endl;
     return 0;
 } // is array sorted left to right
+// why not
