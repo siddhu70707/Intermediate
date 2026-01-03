@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+vector<int> duplicates(vector<int> &nums){
+    if(nums.empty()) return {};
+    unordered_map<int, int> mp;
+    vector<int> result;
+
+    for(int c : nums){
+        mp[c]++;
+    }
+
+    for(auto iterator : mp){
+        if(iterator.second > 1){
+            result.push_back(iterator.first);
+        }
+    }
+
+    return result;
+}
+
+int main(){
+    vector<int> nums = {1, 2, 3, 2, 4, 5, 1};
+    vector<int> ans = duplicates(nums);
+
+    for(int c : ans){
+        cout << c << " ";
+    }
+    cout << endl;
+    return 0;
+}

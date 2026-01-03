@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Siddhu | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("pexels-matthew-montrone-230847-1324803.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      padding: 0;
+      overflow-y: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 15px;
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #e0e0e0;
+      margin-bottom: 50px;
+      font-size: 1.2em;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    .card p, .card li {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+
+    .github {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .github a {
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+
+    .github a:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Siddhu's Progress</h1>
+    <div class="subtitle">Student Developer | Systems & Low‑Level Computing</div>
+
+    <section id="about">
+    <div class="portfolio-grid">
+      <div class="card">
+        <h2>💻 Systems Programming</h2>
+        <p>I work close to the machine, focusing on how software actually runs on hardware.</p>
+        <ul>
+          <li>C / C++ programming</li>
+          <li>Memory and data representation</li>
+          <li>Binary arithmetic & CPU behavior</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>⚙️ Computer Architecture</h2>
+        <p>Hands‑on exploration of CPUs and logic units, not just theory.</p>
+        <ul>
+          <li>8‑bit CPU design (SIDDHCESNA‑1)</li>
+          <li>Adder / Subtractor logic</li>
+          <li>Switch & LED based demonstrations</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🧠 Problem Solving & Learning</h2>
+        <p>I like breaking down complex systems and explaining them clearly.</p>
+        <ul>
+          <li>Code → Assembly → Hardware mapping</li>
+          <li>Performance‑oriented thinking</li>
+          <li>Strong technical presentations</li>
+        </ul>
+      </div>
+    </div>
+    </section>
+
+    <section id="projects">
+      <h1 style="margin-top:60px">Projects</h1>
+      <div class="portfolio-grid">
+        <div class="card">
+          <h2>🖥️ SIDDHCESNA‑1</h2>
+          <p><strong>8‑bit CPU Demonstration Project</strong></p>
+          <ul>
+            <li>Custom 8‑bit logic unit</li>
+            <li>Adder / Subtractor using hardware logic</li>
+            <li>Switch input and LED output</li>
+            <li>Explains C++ → Assembly → Hardware</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>🧪 Low‑Level Experiments</h2>
+          <p>Small experiments focused on understanding how computers work internally.</p>
+          <ul>
+            <li>Binary number representations</li>
+            <li>Signed vs unsigned behavior</li>
+            <li>Performance‑focused C++ tests</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="github">
+      <a href="https://github.com/siddhu70707" target="_blank">🔗 GitHub: siddhu70707</a>
+    </div>
+  </div>
+</body>
+</html>
