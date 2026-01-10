@@ -20,8 +20,8 @@ public:
         }
 
         subset.push_back(nums[index]);
-        createSubset(nums, index + 1, res, subset); // when this function is called, we go at starting of the function never executing the botttom part of the code
-
+        createSubset(nums, index + 1, res, subset); 
+        
         subset.pop_back();
         createSubset(nums, index + 1, res, subset);
     }    
